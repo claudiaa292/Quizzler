@@ -13,7 +13,7 @@ On the Administration page the user can create his own quiz with the questions a
 
 Each Quiz is assigned two buttons to modify or delete the list of Quizzes from the server.
 
-
+<img src="Screenshot 2023-01-27 000535.jpg">
 
 # Project was based on the following technologies and tooling:
  Angular with Typescript
