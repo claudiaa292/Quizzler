@@ -1,3 +1,34 @@
+
+# Quizzler Application
+
+Quizzler is a Quiz application where you can choose the correct answer.
+
+A user can choose only one answer. If the answer is chosen correctly, the background of the answer will be green. If the wrong answer is chosen, the background of the wrong answer is red. The correct answer will always be displayed. Once you choose one answer, the questions are incremented in a progressive bar and a timer is paused. 
+ 
+The "disabled" functionality on the Quiz application is depending on the user's choice. Also, when the timer stops, the "next button" and all answers are disabled.
+
+At the end you can find out how many corrent answers you choose. 
+
+On the Administration page the user can create his own quiz with the questions and answers he wants, he can also change the duration of the timer. 
+
+Each Quiz is assigned two buttons to modify or delete the list of Quizzes from the server.
+
+
+
+# Project was based on the following technologies and tooling:
+ Angular with Typescript
+- HTML5, SASS
+- JSON Server - REST API backend
+- Git
+- Visual Studio Code
+- Git Bash
+- AG - Grid
+
+Libraries:
+Bootrstrap
+
+
+
 # Quizzler
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
