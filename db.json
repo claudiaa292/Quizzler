@@ -1,0 +1,132 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "name": "First JavaScript Quiz",
+      "timeoutSeconds": "7",
+      "questionsCount": 2
+    },
+    {
+      "id": 2,
+      "name": "Second JavaScript quiz",
+      "timeoutSeconds": "16",
+      "questionsCount": 1
+    },
+    {
+      "name": "third Javascript Quiz",
+      "timeoutSeconds": "16",
+      "id": 3,
+      "questionsCount": 0
+    }
+    
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "quizId": 1,
+      "text": "Which of the following is true about typeof operator in JavaScript?"
+    },
+    {
+      "id": 2,
+      "quizId": 1,
+      "text": "Which of the following is true about cookie handling in JavaScript?"
+    },
+    {
+      "id": 3,
+      "quizId": 2,
+      "text": "Which built-in method removes the last element from an array and returns that element?"
+    }
+  ],
+  "answers": [
+    {
+      "id": 1,
+      "questionId": 1,
+      "text": "The typeof is a unary operator that is placed before its single operand, which can be of any type.",
+      "isCorrect": false
+    },
+    {
+      "id": 2,
+      "questionId": 1,
+      "text": "Its value is a string indicating the data type of the operand.",
+      "isCorrect": false
+    },
+    {
+      "id": 3,
+      "questionId": 1,
+      "text": "Both of the above.",
+      "isCorrect": true
+    },
+    {
+      "id": 4,
+      "questionId": 1,
+      "text": "None of the above.",
+      "isCorrect": false
+    },
+    {
+      "id": 5,
+      "questionId": 2,
+      "text": "JavaScript can manipulate cookies using the cookie property of the Document object.",
+      "isCorrect": false
+    },
+    {
+      "id": 6,
+      "questionId": 2,
+      "text": "JavaScript can read, create, modify, and delete the cookie or cookies that apply to the current web page.",
+      "isCorrect": false
+    },
+    {
+      "id": 7,
+      "questionId": 2,
+      "text": "Both of the above.",
+      "isCorrect": true
+    },
+    {
+      "id": 8,
+      "questionId": 2,
+      "text": "None of the above.",
+      "isCorrect": false
+    },
+    {
+      "id": 9,
+      "questionId": 3,
+      "text": "last()",
+      "isCorrect": false
+    },
+    {
+      "id": 10,
+      "questionId": 3,
+      "text": "get()",
+      "isCorrect": false
+    },
+    {
+      "id": 11,
+      "questionId": 3,
+      "text": "pop()",
+      "isCorrect": true
+    },
+    {
+      "id": 12,
+      "questionId": 3,
+      "text": "split()",
+      "isCorrect": false
+    },
+    {
+      "id": 13,
+      "questionId": 3,
+      "text": "isArray()",
+      "isCorrect": false
+    },
+    {
+      "id": 14,
+      "questionId": 3,
+      "text": "splice()",
+      "isCorrect": false
+    },
+    {
+      "id": 15,
+      "questionId": 3,
+      "text": "None of the above.",
+      "isCorrect": false
+    }
+  ]
+}

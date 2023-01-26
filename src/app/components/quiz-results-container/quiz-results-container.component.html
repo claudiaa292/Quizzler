@@ -1,0 +1,13 @@
+<div class="show-results">
+    <h3 *ngIf="counter === 5">
+        Congratulations! You managed to get all answers right!
+    </h3>
+    <h3 *ngIf="counter > 0 && counter <= numberOfQuestions">
+        You only managed to get {{ counter }} out of {{ numberOfQuestions }} answers
+        right!
+    </h3>
+    <h3 *ngIf="counter === 0">Unfortunately, you didn't get any answer right!</h3>
+    <button class="try-again-button btn btn-secondary btn-lg" (click)="onClickTryAgain()">
+        Try again
+    </button>
+</div>

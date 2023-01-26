@@ -1,0 +1,34 @@
+<div class="quiz-container position-relative">
+    <div class="timer-container position-absolute end-0 top-0">
+        <div class="timer text-end">
+            <h4>Remaining time (seconds) {{ quizTimer }}</h4>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-child" [style]="'width:' + (100 / questions.length) * questionIndex + '%'"></div>
+    </div>
+    <h2 class="header text-center">{{ questions[questionIndex].text }}</h2>
+    <button [disabled]="hasAnswered || quizTimer <= 0" (click)="checkAnswer(answer)"
+        class="quiz-button rounded-pill" *ngFor="let answer of questions[questionIndex].answers"
+        [class.correct]="hasAnswered && answer.isCorrect"
+        [class.notcorrect]="hasAnswered && answer.isClicked && !answer.isCorrect">
+        {{ answer.text }}
+    </button>
+
+    <div class="action-button-container" *ngIf="
+      questionIndex != questions.length - 1 && (hasAnswered || quizTimer <= 0)
+    ">
+        <button class="btn btn-secondary btn-lg" (click)="onClickNextButton()">
+            Next
+        </button>
+    </div>
+
+    <div class="action-button-container d-flex justify-content-md-end" *ngIf="
+      questionIndex === questions.length - 1 && (hasAnswered || quizTimer <= 0)
+    ">
+        <button class="btn btn-secondary btn-lg" (click)="onClickShowResults()">
+            Show results
+        </button>
+    </div>
+</div>

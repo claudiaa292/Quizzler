@@ -1,0 +1,55 @@
+///// style for button /////
+.button {
+  border: 1px solid #1ec5ff;
+  padding: 1em 1.5em;
+  display: inline-flex;
+  align-items: center;
+  min-width: 100px;
+  background-color: #1ec5ff;
+  line-height: 1;
+  font-size: 2em;
+  box-shadow: 0 0.2em 0.5em 0 #00000047;
+  color: #fff;
+  justify-content: center;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #1aa5d3;
+    background-color: #1aa5d3;
+  }
+
+  &:active {
+    border: 1px solid #1795bf;
+    background-color: #1795bf;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+///// style for page-container && show-results-container /////
+.page-container,
+.show-results-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding-top: 5vh;
+  box-sizing: border-box;
+}
+

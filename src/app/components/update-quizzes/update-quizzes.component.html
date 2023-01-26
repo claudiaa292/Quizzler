@@ -1,0 +1,38 @@
+<div class="modal-header">
+  <h4 class="modal-title">Edit quiz</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+  <div>
+    <label class="label">Name</label>
+    <input
+      class="input"
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="quiz.name"
+    />
+  </div>
+  <div>
+    <label class="label">Question timeout (seconds)</label>
+    <input class="input" type="text" id="timeoutSeconds" name="timeoutSeconds" (keyup)="onValidateUpdatingQuiz($event)"
+     [(ngModel)]="quiz.timeoutSeconds" />
+  </div>
+</div>
+<div *ngIf="!isTimeoutValueforUpdatingValid">Please insert a number that is greater than zero.</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" [disabled]="!isTimeoutValueforUpdatingValid"
+   (click)="onSave()">Save</button>
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="activeModal.dismiss()"
+  >
+    Cancel
+  </button>
+</div>

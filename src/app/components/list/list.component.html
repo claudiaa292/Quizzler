@@ -1,0 +1,5 @@
+<div class="div-link">
+  <div *ngFor="let quiz of quizzes">
+    <a class="link" [routerLink]="'/quiz/' + quiz.id"> {{ quiz.name }}</a>
+  </div>
+</div>

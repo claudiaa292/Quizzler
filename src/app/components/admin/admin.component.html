@@ -1,0 +1,15 @@
+<div>
+<button class="btn" (click)="openAddingQuizzesModal()">Add Quiz</button>
+<div class="content-table-ag-grid">
+  <ag-grid-angular
+    class="ag-theme-alpine table-ag-grid"
+    [columnDefs]="columnDefs"
+    [rowData]="quizzes"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
+</div>
+</div>
+<input type="text" [(ngModel)]="myString">
+<button (click)="subject$.next(myString)" class="btn btn-primary">Button</button>
+<button (click)="registerListener()">attach listener</button>
+

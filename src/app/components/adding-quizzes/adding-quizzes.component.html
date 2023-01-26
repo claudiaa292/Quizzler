@@ -1,0 +1,42 @@
+<div class="modal-header">
+  <h4 class="modal-title">Add quiz</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <div>
+    <label class="label">Name</label>
+    <input class="input" type="text" id="name" name="name" [(ngModel)]="quiz.name" #nameInput
+      (keyup)="onValidateAddingName($event)" (click)="log(nameInput)" placeholder="Insert Name" />
+
+    <span [class.notValid]="!isNameValueValidforAdding" class="count-letters">
+      {{ maxChars - nameInput.value.length }} / {{ maxChars }}</span>
+
+      <ng-container [ngTemplateOutlet]="errorTemplate"
+      [ngTemplateOutletContext]='{messageError:"Please limit the \"Name\" to 30 characters", isVisible:!isNameValueValidforAdding}'>
+    </ng-container>
+   
+  <div>
+    <label class="label">Question timeout (seconds)</label>
+    <input class="input" type="number" id="timeoutSeconds" name="timeoutSeconds"
+      (input)="onValidateAddingTimeoutSeonds($event)" [(ngModel)]="quiz.timeoutSeconds"
+      (keydown)="onValidateWithKeyDown($event)" />
+
+    <ng-container [ngTemplateOutlet]="errorTemplate"
+      [ngTemplateOutletContext]="{messageError:'Please insert a number that is greater than zero.', isVisible:!isTimeoutValueValidforAdding}">
+    </ng-container>
+
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" [disabled]="!nameInput.value || !isTimeoutValueValidforAdding || !isNameValueValidforAdding" (click)="onAddQuiz()">
+    Save
+  </button>
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">
+    Cancel
+  </button>
+</div>
+
+<ng-template #errorTemplate let-isVisible="isVisible" let-messageError="messageError">
+  <div *ngIf="isVisible" class="error">
+    <i class="fas fa-circle-xmark"></i><span>{{ messageError }}</span>
+  </div>
+</ng-template>

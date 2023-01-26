@@ -1,0 +1,16 @@
+.navbar-list {
+  height: 60px;
+  width: 100%;
+  color: black;
+  background-color: white;
+
+  .btn {
+    font-weight: 700px;
+    font-size: 18px;
+    border: 2px solid transparent;
+
+    &:hover {
+      border-bottom-color: #32a1ce;
+    }
+  }
+}

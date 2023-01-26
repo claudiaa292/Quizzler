@@ -1,0 +1,25 @@
+<div
+  class="vh-100 flex justify-content-center align-items-center"
+  *ngIf="!isQuizStarted"
+>
+  <button class="button" (click)="startQuiz()">START QUIZ</button>
+</div>
+
+<div class="page-container" *ngIf="isQuizStarted && !showResults">
+  <app-quiz-container
+    #quizContainer
+    (onShowResults)="showResults = true; storeCounter = $event"
+    [questions]="questions"
+    [quiz]="quiz"
+  ></app-quiz-container>
+</div>
+
+<div class="show-results-container" *ngIf="showResults">
+  <app-quiz-results-container
+    #showResultsContainer
+    [numberOfQuestions]="questions.length"
+    [counter]="storeCounter"
+    (onTryAgain)="isQuizStarted = true; showResults = false"
+  ></app-quiz-results-container>
+</div>
+

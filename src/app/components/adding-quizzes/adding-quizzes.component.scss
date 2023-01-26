@@ -1,0 +1,35 @@
+.input {
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(145, 136, 136);
+  border-radius: 4px;
+  background-color: #e4e4e4;
+}
+.label {
+  padding: 10px 10px;
+}
+
+.count-letters {
+  margin: 10px;
+}
+
+.notValid {
+  background-color: rgb(233, 143, 143);
+  border-radius: 10px;
+  padding: 6px;
+  margin: 10px;
+}
+
+.error {
+  color: red;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.fa-circle-xmark {
+  color: red($color: red);
+  margin-right: 10px;
+}
