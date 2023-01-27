@@ -21,11 +21,10 @@ Each Quiz is assigned two buttons to modify or delete the list of Quizzes from t
 - JSON Server - REST API backend
 - Git
 - Visual Studio Code
-- Git Bash
 - AG - Grid
 
 Libraries:
-Bootrstrap
+Bootstrap
 
 
 
