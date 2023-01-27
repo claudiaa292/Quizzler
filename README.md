@@ -16,8 +16,9 @@ Each Quiz is assigned two buttons to modify or delete the list of Quizzes from t
 <img src="Screenshot 2023-01-27 000535.jpg">
 
 # Project was based on the following technologies and tooling:
- Angular with Typescript
-- HTML5, SASS
+- Angular with Typescript
+- HTML
+- SASS
 - JSON Server - REST API backend
 - Git
 - Visual Studio Code
