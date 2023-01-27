@@ -1,4 +1,3 @@
-
 # Quizzler Application
 
 Quizzler is a Quiz application where you can choose the correct answer.
@@ -27,6 +26,10 @@ Each Quiz is assigned two buttons to modify or delete the list of Quizzes from t
 Libraries:
 - Bootstrap
 
+# To execute the application, the following steps must be performed:
+
+1. Install the json-server package globally using the npm package manager by executing the command: **npm install -g json-server**
+2. Start the json-server by executing the command: **json-server --watch db.json**, which will read and serve the data from the specified db.json file.
 
 
 # Quizzler
