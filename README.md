@@ -25,7 +25,7 @@ Each Quiz is assigned two buttons to modify or delete the list of Quizzes from t
 - AG - Grid
 
 Libraries:
-Bootstrap
+- Bootstrap
 
 
 
